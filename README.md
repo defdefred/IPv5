@@ -15,23 +15,20 @@ Lets use 48bits IP address stored in MAC address!
 
 0.0.127.0.0.1 will be the local host.
 
-0.0.192.168.x.x will be a private lan.
+0.0.192.168.x.x, 0.0.172.16.x.x and 0.0.10.x.x.x , will be private lans.
 
 # Consequences
 Switches are still working fine without modification.
 
-Vlan are still working the same way
+Vlan are still working the same way.
+
 We need a new ethertype.
 
 Routeur/OS need to be able to manage the new IpMac protocole.
 
 After migration all 0.0.x.x.x.x will be private lan.
 
-After migration we gain 64bits of src and dst IP address for IP data. 
-
-## vlan?
-
-Still needed? Or should we declare valide IpMac network/CIDR instead?
+After migration we gain 64bits of src and dst IP address for IP data.
 
 ## NAT?
 
