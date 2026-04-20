@@ -42,7 +42,14 @@ Easy to adapte.
 
 # DHCP?
 
+request via ethernet broadcast + public key.
+reply via ethernet broadcast + encryptied IpMac and ack token.
+ack with proposed IpMac + encrypted ack token.
 
+Possible to accept only known pub key.
+
+# bonding/LACP
+Work the same...
 
 ## What else?
 
