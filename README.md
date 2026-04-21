@@ -1,4 +1,4 @@
-# IpMac
+# IPv5
 Internet Protocol using configurable MAC address
 
 # Facts
@@ -11,13 +11,14 @@ Internet Protocol using configurable MAC address
 # Proposal
 Lets use 48bits IP address stored in MAC address!
 
-0.0.x.x.x.x will be the legacy internet for IPv4 compatibility, encapsulation and non breaking migration.
+0.0.x.x.x.x will be reserved for the legacy internet. It will allow IPv4 encapsulation for easy migration.
 
-0.0.127.0.0.1 will be the local host.
+# Consequence
 
-0.0.192.168.x.x, 0.0.172.16.x.x and 0.0.10.x.x.x , will be private lans.
+0.0.127.0.0.1 is the new localhost.
 
-# Consequences
+0.0.192.168.x.x, 0.0.172.16.x.x and 0.0.10.x.x.x , are the new private lans.
+
 Switches are still working fine without modification.
 
 ARP become useless.
@@ -26,11 +27,11 @@ Vlan are still working the same way.
 
 We need a new ethertype.
 
-Routeur/OS need to be able to manage the new IpMac protocole and IPv4 encapsulation.
+Routeur/OS need to be able to manage the new IPv5 protocol and IPv4 encapsulation.
 
-After migration all 0.0.x.x.x.x will be private lan.
+After migration all 0.0.x.x.x.x will become private lan.
 
-After migration we gain 64bits from src and dst IP address for IP data.
+we gain 64bits from src and dst IPv4 address for IP data.
 
 MAC address economy collapse, all equipment are using 0.0.0.0.0.0 by default.
 
@@ -52,6 +53,9 @@ Possible to accept only known pub key.
 
 # bonding/LACP
 Work the same...
+
+# DNS
+Shoul reply IPv4 or IPv5 address depending of the IP protool used for asking.
 
 ## What else?
 
