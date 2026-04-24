@@ -60,5 +60,6 @@ Work the same...
 Should reply IPv4 or IPv5 address depending of the IP protool used for asking.
 
 ## What else?
+https://www.reddit.com/r/networking/comments/1suf9bn/what_if/
 
 
