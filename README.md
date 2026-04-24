@@ -71,6 +71,9 @@ Work the same...
 # DNS
 Should reply IPv4 or IPv5 address depending of the IP protool used for asking.
 
+# is the name free?
+https://hackaday.com/2025/03/09/ipv4-ipv6-hey-what-happened-to-ipv5/
+
 ## What else?
 https://www.reddit.com/r/networking/comments/1sungvg/what_if_new/
 
