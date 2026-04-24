@@ -14,9 +14,11 @@ Lets use 48bits IP address and configure MAC address the same to suppress ARP ov
 0.0.x.x.x.x will be reserved for the legacy internet. It will allow IPv4 encapsulation for easy migration.
 
 IPv4 part of the network still work as before, with traditional MAC.
+
 Two IPv4 can communicate across an IPv5 Internet because routers just need to add or remove the 0.0. beginning of the address.
 
 IPv4 clients can't reach IPv5 only servers.
+
 IPv5 clients can't reach IPv4 only servers.
 
 # Consequence
@@ -24,6 +26,7 @@ IPv5 clients can't reach IPv4 only servers.
 if eth0 have IP `1.2.3.4.5.6`, then it's MAC address is `01:02:03:04:05:06`, no need to broadcast everybody `who-is 01:02:03:04:05:06`.
 
 When you want to reach an IP outside you LAN, just send it to the routeur using its obvious MAC = IP.
+
 The paquet travel on Internet and the last routeur managing the target IP LAN, can use the same MAC = IP property to deliver the packet.
 
 0.0.127.0.0.1 is the new localhost.
@@ -41,6 +44,7 @@ Routeur/OS need to be able to manage the new IPv5 protocol and IPv4 encapsulatio
 After IPv4 death, all 0.0.x.x.x.x will become private lan.
 
 MAC address economy collapse, all new IPv5 only equipment are using 0.0.0.0.0.0 by default.
+
 IP address economy collapse.
 
 ## NAT?
@@ -68,6 +72,5 @@ Work the same...
 Should reply IPv4 or IPv5 address depending of the IP protool used for asking.
 
 ## What else?
-https://www.reddit.com/r/networking/comments/1suf9bn/what_if/
-
+https://www.reddit.com/r/networking/comments/1sungvg/what_if_new/
 
