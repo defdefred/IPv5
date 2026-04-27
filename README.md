@@ -27,7 +27,7 @@ IPv4 clients can't reach IPv5 only servers.
 
 IPv5 clients can't reach IPv4 only servers.
 
-# Consequence
+# Consequences
 
 if eth0 have IP `1.2.3.4.5.6`, then it's MAC address is `01:02:03:04:05:06`, no need to broadcast everybody `who-is 01:02:03:04:05:06`.
 
@@ -61,7 +61,7 @@ No more needed after full migration.
 
 Easy to adapte.
 
-# DHCP?
+## DHCP?
 
 request via ethernet broadcast + self generated public key.
 
@@ -71,15 +71,14 @@ ack from proposed IPv5 address + private key encrypted ack token.
 
 Possible to accept only known pub key.
 
-# bonding/LACP
+## bonding/LACP
 Work the same...
 
-# DNS
+## DNS
 Should reply IPv4 or IPv5 address depending of the IP protool used for asking.
 
-# is the name free?
+## is the name free?
 https://hackaday.com/2025/03/09/ipv4-ipv6-hey-what-happened-to-ipv5/
 
-## What else?
-https://www.reddit.com/r/networking/comments/1sungvg/what_if_new/
+# What else?
 
