@@ -1,4 +1,4 @@
-# IPv5
+# IPv2
 Internet Protocol using configurable MAC address to suppress ARP overhead.
 
 # IPv4 optimization
@@ -15,21 +15,21 @@ As MAC are 48bits, we could also extend IP to 48 bits and forget the IPv6 mess..
 48bits MAC address are now configurable on all equipment.
 
 # Proposal
-Lets use 48bits IP address and configure MAC address the same to suppress ARP overhead!
+Lets use 48bits IPv2 address and configure MAC address the same to suppress ARP overhead!
 
 0.0.x.x.x.x will be reserved for the legacy internet. It will allow IPv4 encapsulation for easy migration.
 
 IPv4 part of the network still work as before, with traditional MAC.
 
-Two IPv4 can communicate across an IPv5 Internet because routers just need to add or remove the 0.0. beginning of the address.
+Two IPv4 can communicate across an IPv2 Internet because routers just need to add or remove the 0.0. beginning of the address.
 
-IPv4 clients can't reach IPv5 only servers.
+IPv4 clients can't reach IPv2 only servers.
 
-IPv5 clients can't reach IPv4 only servers.
+IPv2 clients can't reach IPv4 only server.
 
 # Consequences
 
-if eth0 have IP `1.2.3.4.5.6`, then it's MAC address is `01:02:03:04:05:06`, no need to broadcast everybody `who-is 01:02:03:04:05:06`.
+if eth0 have IP `1.2.3.4.5.6`, then it's MAC address is `01:02:03:04:05:06`, no need to broadcast everybody `who is 01:02:03:04:05:06`.
 
 When you want to reach an IP outside you LAN, just send it to the routeur using its obvious MAC = IP.
 
@@ -41,15 +41,15 @@ The paquet travel on Internet and the last routeur managing the target IP LAN, c
 
 Switches are still working fine without layer 2 modification.
 
-ARP become useless.
+Ethernet ARP become useless.
 
 Vlan are still working the same way.
 
-Routeur/OS need to be able to manage the new IPv5 protocol and IPv4 encapsulation.
+Routeur/OS need to be able to manage the new IPv2 protocol and IPv4 encapsulation.
 
 After IPv4 death, all 0.0.x.x.x.x will become private lan.
 
-MAC address economy collapse, all new IPv5 only equipment are using 0.0.0.0.0.0 by default.
+MAC address economy collapse, all new IPv2 only equipment are using 0.0.0.0.0.0 by default.
 
 IP address economy collapse.
 
@@ -65,9 +65,9 @@ Easy to adapte.
 
 request via ethernet broadcast + self generated public key.
 
-reply via ethernet broadcast + public key encrypted IPv5 address and ack token.
+reply via ethernet broadcast + public key encrypted IPv2 address and ack token.
 
-ack from proposed IPv5 address + private key encrypted ack token.
+ack from proposed IPv2 address + private key encrypted ack token.
 
 Possible to accept only known pub key.
 
@@ -75,10 +75,10 @@ Possible to accept only known pub key.
 Work the same...
 
 ## DNS
-Should reply IPv4 or IPv5 address depending of the IP protool used for asking.
+Should reply IPv4 or IPv2 address depending of the IP protool used for asking.
 
 ## is the name free?
-https://hackaday.com/2025/03/09/ipv4-ipv6-hey-what-happened-to-ipv5/
+https://www.iana.org/assignments/version-numbers/version-numbers.xhtml#version-numbers-1
 
 # What else?
 
